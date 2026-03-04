@@ -1,0 +1,21 @@
+{
+  "name": "2025573010089_algoritma_struktur_data",
+  "version": "1.0.0",
+  "description": "NIM     : 2025573010089\r NAMA    : NUR IHWAN NAUVAL\r ALAMAT  : DESA TGK DIBALEE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NurIhwanNauval/2025573010089_Algoritma_Struktur_Data.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NurIhwanNauval/2025573010089_Algoritma_Struktur_Data/issues"
+  },
+  "homepage": "https://github.com/NurIhwanNauval/2025573010089_Algoritma_Struktur_Data#readme"
+}
