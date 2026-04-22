@@ -130,4 +130,3 @@ while (!antrianPrinter.isEmpty()) {
     console.log(` Selesai mencetak: ${dokumen}`);
 }
 console.log(' Semua dokumen selesai dicetak.');
-
