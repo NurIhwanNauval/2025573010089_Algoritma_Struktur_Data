@@ -43,7 +43,6 @@ console.log('Elemen unik:', hitungUnik(dataAcak));
 
 console.log('\n=== Latihan 2 : ===\n');
 
-console.log("\n=== Latihan 2 ===");
 function cariPasanganLambat(arr, target) {
   for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; j < arr.length; j++) {
