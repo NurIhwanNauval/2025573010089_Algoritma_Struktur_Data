@@ -48,7 +48,6 @@ console.log(`Nilai ${nilaiAkhir}: ${statusLulus}`);
 
 const bulan = 7;
 
-
 let musim;
 
 if (bulan === 12 || bulan === 1 || bulan === 2) {
@@ -63,15 +62,10 @@ if (bulan === 12 || bulan === 1 || bulan === 2) {
     musim = "Bulan tidak valid";
 }
 
-
 console.log(`\nBulan ${bulan} termasuk musim: ${musim}`);
-
-
-
 
 const adaAwan = true;
 const adaAngin = false;
-
 
 console.log(`Apakah cuaca mendung dan berangin? ${adaAwan && adaAngin}`);
 console.log(`Apakah ada awan atau angin? ${adaAwan || adaAngin}`);
