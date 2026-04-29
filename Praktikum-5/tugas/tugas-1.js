@@ -110,5 +110,4 @@ const arrC = Array.from(
 );
 
 ukurWaktu("Kuadrat Lambat O(n³)", () => cekKuadratLambat(arrC));
-
 ukurWaktu("Kuadrat Cepat O(n log n)", () => cekKuadratCepat(arrC));
