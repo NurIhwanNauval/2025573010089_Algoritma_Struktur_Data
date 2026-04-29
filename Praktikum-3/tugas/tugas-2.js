@@ -55,4 +55,5 @@ kataUji.forEach((kata) => {
     } else {
         console.log(`${kata} bukan palindrom`);
     }
-});
+}
+);
