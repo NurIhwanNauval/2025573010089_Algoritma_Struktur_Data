@@ -38,3 +38,6 @@ adaDuplikatCepat(besar);
 console.log('Duplikat CEPAT O(n) :', Date.now()-t, 'ms');
 const kata = ['a','b','a','c','b','a','d'];
 console.log('\nFrekuensi:', frekuensiCepat(kata));
+
+
+
