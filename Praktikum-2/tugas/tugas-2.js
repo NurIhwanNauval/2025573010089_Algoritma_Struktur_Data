@@ -3,7 +3,6 @@ const TinggiBadan = 1.72;
 
 let bmi = BeratBadan/(TinggiBadan * TinggiBadan);
 
-
 let kategori;
 if(bmi < 18.5){
     kategori = "Kurus";
