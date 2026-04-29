@@ -65,7 +65,8 @@ function benchmarkSemua(ukuranData) {
     end = Date.now();
 
     console.log("O(n²):", end - start, "ms");
-  });
+  }
+);
 }
 
 benchmarkSemua([100, 500, 1000, 5000, 10000]);
