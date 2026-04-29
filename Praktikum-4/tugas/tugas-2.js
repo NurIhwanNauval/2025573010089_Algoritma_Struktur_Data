@@ -55,4 +55,5 @@ const test = [
 
 test.forEach(item => {
     console.log(`${item} -> Seimbang: ${cekKurungSeimbang(item)}`);
-});
+}
+);
