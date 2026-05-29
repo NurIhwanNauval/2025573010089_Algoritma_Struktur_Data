@@ -83,6 +83,66 @@ class LinkedList {
         return -1;
     }
 
+    //Latihan 1:
+    // Ambil data pada indeks tertentu — O(n)
+    getAt(index) {
+        if (index < 0 || index >= this.size) return null;
+
+        let current = this.head;
+        for (let i = 0; i < index; i++) {
+            current = current.next;
+        }
+
+        return current.data;
+    }
+
+    // Hapus node pada indeks tertentu — O(n)
+    deleteAt(index) {
+        if (index < 0 || index >= this.size) return false;
+
+        if (index === 0) {
+            this.head = this.head.next;
+            this.size--;
+            return true;
+        }
+
+        let current = this.head;
+
+        for (let i = 0; i < index - 1; i++) {
+            current = current.next;
+        }
+
+        current.next = current.next.next;
+        this.size--;
+
+        return true;
+    }
+
+    // Cari indeks dari suatu data — O(n)
+    indexOf(data) {
+        let current = this.head;
+        let index = 0;
+
+        while (current) {
+            if (current.data === data) return index;
+            current = current.next;
+            index++;
+        }
+
+        return -1;
+    }
+
+    // Cek apakah list kosong — O(1)
+    isEmpty() {
+        return this.size === 0;
+    }
+
+    // Hapus seluruh isi list — O(1)
+    clear() {
+        this.head = null;
+        this.size = 0;
+    }
+
     // Tampilkan semua node — O(n)
     print() {
         if (!this.head) { console.log(' [List kosong]'); return; }
@@ -136,3 +196,25 @@ ll.print();
 console.log('\n=== Reverse ===');
 ll.reverse();
 ll.print();
+
+// Lanjut LATIHAN 1 :
+console.log('\n=== getAt ===');
+console.log('Data indeks 2:', ll.getAt(2));
+
+console.log('\n=== indexOf ===');
+console.log('Index data 30:', ll.indexOf(30));
+console.log('Index data 999:', ll.indexOf(999));
+
+console.log('\n=== deleteAt ===');
+ll.deleteAt(1);
+ll.print();
+
+console.log('\n=== isEmpty ===');
+console.log(ll.isEmpty());
+
+console.log('\n=== clear ===');
+ll.clear();
+ll.print();
+
+console.log('\n=== isEmpty setelah clear ===');
+console.log(ll.isEmpty());
