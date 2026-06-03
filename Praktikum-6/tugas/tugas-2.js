@@ -158,4 +158,3 @@ console.log(
 console.log(
     tengahLinkedList(createList([10, 20, 30])).value
 );
-// 20
